@@ -42,6 +42,9 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
+  <PropertyGroup>
+    <IntDir>$(ProjectDir)$(MSBuildProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
   <PropertyGroup Label="UserMacros" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -80,7 +83,6 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <PropertyGroup>
     <OutDir>$(ProjectDir)\$(TargetName)$(Platform)$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)\$(TargetName)$(Platform)$(Configuration)\</IntDir>
     <BuildDependsOn>ClCompile</BuildDependsOn>
   </PropertyGroup>
   <ImportGroup Label="ExtensionTargets">
