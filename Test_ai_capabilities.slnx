@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Dll1/Dll1.vcxproj" Id="76978b83-fdbc-4ddf-a3ea-135446275ac9" />
+  <Project Path="Test_ai_capabilities/Test_ai_capabilities.vcxproj" Id="14d17a0a-8a18-4f4b-a82b-f223cf3dec4a" />
+</Solution>
