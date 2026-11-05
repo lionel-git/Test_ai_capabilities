@@ -55,6 +55,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalOptions>/Zs %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Manifest>
       <EnableSegmentHeap>true</EnableSegmentHeap>
@@ -79,6 +80,7 @@
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="execute.cpp" />
+    <ClCompile Include="execute2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <PropertyGroup>
