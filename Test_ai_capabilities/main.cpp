@@ -22,8 +22,14 @@ enum class Shift
 	GLOBAL
 };
 
+Shift getValue()
+{
+	return Shift::RELATIVE;
+}
+
 int main()
 {
+	const auto shift = getValue();
 	std::cout << "Hello, World!" << std::endl;
 	std::cout << WINDOWS_RELATIVE << std::endl;
 	std::cout << WINDOWS_ABSOLUTE << std::endl;

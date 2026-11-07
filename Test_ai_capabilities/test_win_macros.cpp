@@ -10,8 +10,32 @@
 #undef OUT
 
 #include <winsock2.h>
+//#undef IN
+//#undef OUT
+
+
+//#define IN
+//#define OUT
+
+#ifdef IN
+
+#endif
+
 #undef IN
-#undef OUT
+
+// ====  Cf minwindef.h
+#ifndef IN
+#define IN
+#endif
+
+#ifndef OUT
+#define OUT
+#endif
+// ==========
+
+#ifndef IN
+#define IN
+#endif
 
 int init_sockets()
 {
